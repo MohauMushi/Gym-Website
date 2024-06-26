@@ -1,0 +1,42 @@
+.services-section {
+    background-color: #000000;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: -1.98rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.services-section h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.services-section p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 2rem 1rem;
+    }
+
+    .services-section h1 {
+        font-size: 2rem;
+    }
+
+    .services-section p {
+        font-size: 1rem;
+    }
+}
