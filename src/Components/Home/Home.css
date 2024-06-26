@@ -1,0 +1,33 @@
+.home-section {
+	background-image: url("/backdrop.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	min-height: 100vh;
+	top: -2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+  }
+  
+  .home-section h1 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	font-style: italic;
+  }
+  
+  .home-section p {
+	font-size: 1.2em;
+  }
