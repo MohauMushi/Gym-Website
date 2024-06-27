@@ -1,35 +1,37 @@
 .services-section {
   background-color: #000000;
-  /* text-align: center; */
-  /* min-height: 100vh; */
-  /* margin-top: -1.98rem; */
   display: flex;
-  margin: 0 auto;
-  padding: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  padding: 2rem;
+  /* position: relative; */
+  /* width: 100vw; */
+  /* margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%); */
+  box-sizing: border-box;
 }
 
 .services-section h1 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
 .services-description {
-  text-align: center;
   margin-bottom: 2rem;
+  max-width: 800px;
+  width: 90%;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -38,6 +40,11 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  flex: 1 1 300px;
+  max-width: calc(33.333% - 1.33rem);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -51,34 +58,35 @@
 }
 
 .service-title {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   margin: 1rem;
 }
 
 .service-description {
   margin: 0 1rem 1rem;
   color: #666;
+  flex-grow: 1;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
-/* .learn-more-btn {
-  display: block;
-  width: calc(100% - 2rem);
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: #404a4f;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+@media (max-width: 1200px) {
+  .service-card {
+    max-width: calc(50% - 1rem);
+  }
 }
-
-.learn-more-btn:hover {
-  background-color: #9ea5a9;
-} */
 
 @media (max-width: 768px) {
+  .service-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 1rem;
+  }
+
   .services-grid {
-    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
