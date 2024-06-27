@@ -1,16 +1,16 @@
 .contact-section {
     background-color: #000000;
-    text-align: center;
     min-height: 100vh;
-    margin-top: -1.98rem;
+    /* margin-top: -1.98rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 2rem;
+    /* width: 100vw; */
+    /* padding: clamp(2rem, 5vw, 4rem); */
+    box-sizing: border-box;
 }
 
 .contact-section h1, .contact-section h2 {
