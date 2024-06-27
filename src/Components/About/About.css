@@ -1,16 +1,16 @@
 .about-section {
-    background-color: #000000;
-    text-align: center;
-    min-height: 100vh;
-	margin-top: -5.98rem;
-    display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	position: relative;
-	margin-left: -50vw;
-	margin-right: -50vw;
+  background-color: #000000;
+  min-height: 100vh;
+  margin-top: -5.98rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  padding: clamp(2rem, 5vw, 4rem);
+  box-sizing: border-box;
 }
 
 .about-content {
@@ -21,60 +21,62 @@
 .about-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  align-items: stretch;
+  gap: clamp(1rem, 3vw, 2rem);
   flex-wrap: wrap;
 }
 
 .image-container {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 300px;
+  max-width: 500px;
 }
 
 .about-image {
   width: 100%;
-  max-width: 25rem;
   height: auto;
   border-radius: 3rem;
+  object-fit: cover;
 }
 
 .text-container {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-section h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   color: #ffffff;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: clamp(1rem, 3vw, 2rem);
 }
 
 .about-section p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #ffffff;
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .about-section {
-    padding: 1rem;
-  }
-
   .about-container {
-    flex-direction: column;
-  }
-
-  .about-section h1 {
-    font-size: 2rem;
-  }
-
-  .about-section p {
-    font-size: 1rem;
+      flex-direction: column;
+      align-items: center;
   }
 
   .image-container,
   .text-container {
-    width: 100%;
+      max-width: 100%;
+  }
+
+  .about-image {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+      padding: 1rem;
   }
 }
