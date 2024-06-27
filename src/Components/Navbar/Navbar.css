@@ -41,6 +41,10 @@
   font-size: 18px;
 }
 
+.navbar-links a:hover{
+  color: #adb5bd;
+}
+
 
 .navbar-toggle {
   display: none;
