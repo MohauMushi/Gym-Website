@@ -1,5 +1,5 @@
 .contact-section {
-    /* background-color: #f8f9fa; */
+    background-color: #000000;
     text-align: center;
     min-height: 100vh;
     margin-top: -1.98rem;
@@ -15,7 +15,7 @@
 
 .contact-section h1, .contact-section h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #666;
     margin-bottom: 1rem;
 }
 
@@ -38,7 +38,7 @@
 #contact-form label {
     text-align: left;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #666;
 }
 
 #contact-form input,
@@ -60,7 +60,7 @@
 }
 
 #contact-form button:hover {
-    background-color: #6f4b48;
+    background-color: #343a40;
 }
 
 @media (max-width: 768px) {

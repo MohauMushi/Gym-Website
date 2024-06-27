@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <h2>Get in touch</h2>
-      <p>Do you have a project in your mind or anything, contact me here</p>
+      <p>Get in touch with me for any inquiries or support.</p>
       <form id="contact-form">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" required />
