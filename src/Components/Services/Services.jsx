@@ -5,32 +5,32 @@ const servicesData = [
   {
     title: "One-on-One Personal Training",
     description: "Get personalized attention and customized workouts tailored to your specific goals and needs.",
-    image: "../one-on-one.jpg"
+    image: "../../../one-on-one.jpg"
   },
   {
     title: "Small Group Training",
     description: "Enjoy the benefits of personal training in a motivating group setting with like-minded individuals.",
-    image: "../Small-Group-Training.jpg"
+    image: "../../../Small-Group-Training.jpg"
   },
   {
     title: "Online Coaching",
     description: "Receive expert guidance and support from anywhere, with flexible programs that fit your schedule.",
-    image: "../Online-Coaching.jpg"
+    image: "../../../Online-Coaching.jpg"
   },
   {
     title: "Specialized Programs",
     description: "Target specific goals with our specialized programs, including weight loss, muscle gain, and sports performance.",
-    image: "../Specialized-Programs.jpg"
+    image: "../../../Specialized-Programs.jpg"
   },
   {
     title: "Corporate Wellness Programs",
     description: "Boost employee health and productivity with our tailored corporate wellness solutions.",
-    image: "../Corporate-Wellness-Programs.jpg"
+    image: "../../../Corporate-Wellness-Programs.jpg"
   },
   {
     title: "Fitness Workshops and Seminars",
     description: "Expand your knowledge and skills with our educational workshops and seminars on various fitness topics.",
-    image: "../Fitness-Workshops-and-Seminars.jpg"
+    image: "../../../Fitness-Workshops-and-Seminars.jpg"
   }
 ];
 
